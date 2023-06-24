@@ -1,0 +1,282 @@
+/*************************************************
+**************************************************
+
+Website Name: 
+Website URL: 
+Website Author: Tabitha Turton
+
+Color Guide
+***************
+Brun tres clair: #FDeBDB
+Brun clair: #FDD6A7
+Brun foncé: #9D6437
+
+Font Guide
+***************
+
+
+
+*************************************************/
+
+/************************************************
+*************************************************
+0. CSS Reset ------------------------ 
+1. Universal Styles -----------------
+2. Header & Nav Styles -------------- 
+3. Main Body Styles ----------------- 
+4. Footer Styles -------------------- 
+*************************************************
+************************************************/
+
+/*----------------------------------------------
+------------------------------------------------
+0. CSS Reset
+------------------------------------------------
+----------------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*----------------------------------------------
+------------------------------------------------
+1. Universal Styles
+------------------------------------------------
+----------------------------------------------*/
+@font-face {
+    font-family: 'asapbold';
+    src: url('../font/font/asap-bold-webfont.woff2') format('woff2'),
+         url('../font/asap-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'asapmedium';
+    src: url('../font/asap-medium-webfont.woff2') format('woff2'),
+         url('../font/asap-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'asapregular';
+    src: url('../font/asap-regular-webfont.woff2') format('woff2'),
+         url('../font/asap-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/*----------------------------------------------
+------------------------------------------------
+2. Header & Nav Styles
+------------------------------------------------
+----------------------------------------------*/
+#site-head{
+    display: flex;
+    margin: auto;
+    width: 70%;
+    justify-content: space-between;
+}
+#head-ctn{
+    background-color: #9D6437;
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    border-bottom:#FDD6A7 4px solid ;
+}
+#logo-head{
+    width: 150px;
+}
+#Slide-show{
+    width: 100%;
+    padding-top: 60px;
+}
+ul{
+    list-style-type: none;
+    text-align: center;
+    display: flex;
+}
+#nav-header{
+    display: flex;
+}
+#nav-list{
+     align-items: center;
+}
+#nav-list li{
+    font-family: 'asapmedium', sans-serif;
+    font-size: 24px;
+    padding-right: 22px;  
+}
+#nav-list li:last-child{
+    padding-right: 0px;
+}
+
+#nav-list li img{
+    width: 24px;
+    height: 24px;
+    margin: auto;
+    align-items: center;
+}
+.nav-media-logo{
+    display: flex;
+}
+
+
+/*----------------------------------------------
+------------------------------------------------
+3. Main Body Styles
+------------------------------------------------
+----------------------------------------------*/
+.shadow{
+    background-image: url("../elements/SunrisesOrder_BG_3840x2160.png");
+    background-size:100% auto;
+    background-repeat: no-repeat;
+}
+html{
+    overflow-x:hidden;
+}
+body {
+    font-family: 'asapregular', sans-serif;
+    width: 100%;
+    margin: auto;
+}
+h1 {
+    font-family: 'asapregular', sans-serif;
+    font-size: 35px;
+}
+h2{
+    font-size: 25px;
+}
+a{
+    text-decoration: none; 
+    color: white;
+}
+
+/*------*/
+
+.wishlist-ctn{
+    height: 800px;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.wishlist-img {
+    height: 800px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.wishlist-img img{
+    height: 100%;
+    border-radius: 50px;
+}
+#wish-ctn{
+    background-color: #FDeBDB;
+    margin: 0;
+    width: 100%;
+    margin-top: -4px;
+}
+.wishlist-text{
+    font-size: 25px;
+    color: #9D6437;
+    text-align: center;
+    line-height: 37px;
+}
+.wishlist-text p{
+    padding: 30px 30px 30px 30px;
+}
+.trailer-ctn{
+    width: 100%;
+    background-color: #9D6437;
+    text-align: center;
+    display: flex;
+}
+.trailer-box{
+    height: 800px;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    align-items:center;
+    color:white;
+    flex-direction:column;
+}
+.trailer-box h1{
+    padding-top: 75px;
+    padding-bottom: 25px;
+}
+.trailer-box iframe{
+    border:#FDD6A7 2px solid ;
+}
+.our-team-ctn{
+    height: 800px;
+    width: 100%;
+    background-color:#FDeBDB ;
+    color:#9D6437 ;
+    text-align: center;
+    background: rgba(253,214,167,0.92);
+}
+
+.employe img{
+    width: 225px;
+    height: 225px;
+    border-radius: 25px;
+}
+.employe{
+    padding:0px 75px 0px 75px;
+}
+.our-team-box{
+    width: 70%;
+    margin: auto;
+}
+.our-team-box h1{
+    padding-top: 75px;
+    padding-bottom: 25px;
+}
+
+.picture{
+    display: flex;
+    justify-content:center;
+}
+.social-list{
+    display: flex;
+    justify-content:center;
+
+}
+.social-list li{
+    padding: 0px 20px 0px 20px;
+}
+.footer-ctn{
+    width: 100%;
+    background-color:#9D6437 ; 
+    height: 250px;
+    background: rgba(157,100,55,0.92);
+}
+.footer-box{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content:space-between;
+    padding-top: 75px;
+}
+.footer-social{
+    color: white;
+    text-align: right;
+}
+.footer-social-list img{
+    width: 24px;
+}
+.footer-social-list li{
+    margin-top: 10px;
+    margin-right: 20px;
+}
+.footer-social-list li:last-child{
+    margin-right: 0px;
+}
+.logo-footer{
+    width: 200px !important;
+}
+
+/*----------------------------------------------
+------------------------------------------------
+4. Footer Styles
+------------------------------------------------
+----------------------------------------------*/
